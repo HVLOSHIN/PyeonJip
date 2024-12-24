@@ -29,16 +29,6 @@ public class ChatRoomService {
     private final ChatRoomMapper chatRoomMapper;
     private final SimpMessagingTemplate messagingTemplate;
 
-    public List<ChatRoomDto> getChatRooms(){
-        List<ChatRoom> chatRooms = chatRoomRepository.findAll();
-
-        List<ChatRoomDto> chatRoomDtos = new ArrayList<>();
-
-        for (ChatRoom chatRoom : chatRooms) {
-            chatRoomDtos.add(chatRoomMapper.toDTO(chatRoom));
-        }
-        return chatRoomDtos;
-    }
 
     public ChatRoomDto getChatRoomById(Long roomId) {
         ChatRoom chatRoom = chatRoomRepository.findById(roomId)

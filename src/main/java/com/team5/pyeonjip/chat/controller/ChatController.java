@@ -5,14 +5,11 @@ import com.team5.pyeonjip.chat.dto.ChatRoomDto;
 import com.team5.pyeonjip.chat.service.ChatMessageService;
 import com.team5.pyeonjip.chat.service.ChatRoomService;
 import com.team5.pyeonjip.user.dto.CustomUserDetails;
-import com.team5.pyeonjip.user.entity.User;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
