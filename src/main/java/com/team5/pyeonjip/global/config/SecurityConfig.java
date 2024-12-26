@@ -64,7 +64,7 @@ public class SecurityConfig {
                                 CorsConfiguration configuration = new CorsConfiguration();
 
                                 // 데이터를 보내는 80번 포트를 허용
-                                configuration.setAllowedOrigins(Collections.singletonList("http://43.202.4.58:3000"));
+                                configuration.setAllowedOrigins(Collections.singletonList("http://3.36.111.243:3000"));
 
                                 // 모든 메서드 허용
                                 configuration.setAllowedMethods(Collections.singletonList("*"));
