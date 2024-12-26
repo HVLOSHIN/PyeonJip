@@ -67,7 +67,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws")
-                .setAllowedOrigins("https://ehedrefxzmygttpe.tunnel-pt.elice.io")
+                .setAllowedOrigins("http://43.202.4.58:3000")
                 .withSockJS();
     }
 }

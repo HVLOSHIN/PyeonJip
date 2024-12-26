@@ -27,4 +27,4 @@ spring:
       mail.smtp.starttls.enable: true
 app:
   api:
-    url: https://dsrkzpzrzxqkarjw.tunnel-pt.elice.io
+    url: http://43.202.4.58:3000
